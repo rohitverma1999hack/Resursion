@@ -16,7 +16,7 @@ void solve(string ip,string op){
 
 	op2.push_back(ip[0]);
 	ip.erase(ip.begin() + 0);
-
+	//two options wheather to choose the element in the subset or not 
 	solve(ip,op1);
 	solve(ip,op2);
 }
