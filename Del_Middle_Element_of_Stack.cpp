@@ -1,6 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//passing stack by reference
+//k is the middle one 
 void del(stack<int> &s,int k){
 	if(k==1){
 		s.pop();
@@ -19,7 +21,8 @@ int main(){
         s.push(30);
         s.push(20);
         s.push(5);
-        s.push(1);
+        s.push(2);
+	s.push(1);
 	int k = (s.size()/2) + 1;
 	del(s,k);
 	while(s.size()!=0){
